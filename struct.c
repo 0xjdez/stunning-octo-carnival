@@ -11,9 +11,9 @@ Structures (struct) are user-defined data type in C
 // };
 
 // point3D struct declaration.
-struct point3D {
+typedef struct point3D {
     int x, y, z;
-};
+}point3D;
 
 int main(){
     // struct point p2 = {10, 20};
@@ -22,10 +22,10 @@ int main(){
     // struct point *p = &p2;
     // printf("%d, %d\n", p->x, p->y);
 
-    struct point3D p1 = {.z = 4, .y = 5, .x = 3};
-    struct point3D *p12 = &p1;
+    point3D p1 = {.z = 4, .y = 5, .x = 3};
+    point3D *p12 = &p1;
 
-    struct point3D arr[ARRAY_SIZE];
+    point3D arr[ARRAY_SIZE];
 
     int j = 0;
     for (int i = 0; i < ARRAY_SIZE; i++)
