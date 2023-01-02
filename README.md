@@ -1,2 +1,3 @@
 ## About
-Repo containing what I'm learning with the C programming language
+
+Systems Programming learning routine using C, python and golang.
