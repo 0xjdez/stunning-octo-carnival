@@ -9,4 +9,6 @@ int main(void) {
     *a = prac_point_init(1.0, 2.0);
 
     prac_point_print(a);
+
+    free(a);
 }
