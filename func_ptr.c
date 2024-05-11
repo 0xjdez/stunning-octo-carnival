@@ -9,7 +9,7 @@ typedef void (*int_array_mapper)(int arg);
 
 // without typedef, this would be
 // void array_map(int *arr, size_t arr_size, void (*func)(int arg));
-
+// maps an int array to a function
 void array_map(int *arr, size_t arr_size, int_array_mapper func) {
     for (size_t i = 0; i < arr_size; i++) {
         (*func)(arr[i]);
